@@ -22,5 +22,5 @@ int main() {
 
     printf("First Str = %s\n", str1);
     printf("Second Str = %s\n", str2);
-    printf("Copy String = %s", concatStr);
+    printf("Concat String = %s", concatStr);
 }

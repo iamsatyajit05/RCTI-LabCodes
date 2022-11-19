@@ -4,7 +4,7 @@
 
 int main() {
     char str[100], revstr[100];
-    int strlen = 0, isDifferent = 0;
+    int strlen = 0;
     
     printf("Enter a string: ");
     gets(str);

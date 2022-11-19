@@ -8,7 +8,7 @@ int main() {
     printf("Enter the size of array: ");
     scanf("%d", &size);
 
-    printf("Enter the elemtns seprated by space: ");
+    printf("Enter the elements seprated by space: ");
     for (int i = 0; i < size; i++){
         scanf("%d", &arr[i]);
     }

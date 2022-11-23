@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-    int size = 0, search = 0, isFound = 0, arr[100];
+    int size = 0, search = 0, isFound = 0, arr[100], index = 0;
     
     printf("Enter the size of array: ");
     scanf("%d", &size);
@@ -21,12 +21,13 @@ int main() {
     for (int i = 0; i < size; i++) {
         if (arr[i] == search) {
             isFound = 1;
+            index = i + 1;
             break;
         }
     }
 
     if (isFound) {
-        printf("Element %d Found", search);
+        printf("Element %d Found at %d", search, index);
     }
     else {
         printf("Element %d Not Found", search);

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main() {
-    char str1[100], str2[100], concatStr[100];
+    char str1[100], str2[100], concatStr[100] = {'\0'};
     int len = 0;
 
     printf("Enter a 1st string: ");

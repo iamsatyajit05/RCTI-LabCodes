@@ -1,4 +1,4 @@
-# Write a program to read the marks and assign a grade to a student
+# Write a program to read the marks and assign a grade to a student, Using switch case
 
 # A if 100-90
 # B if 80-89
@@ -9,25 +9,31 @@
 
 print("Let's see your grade :)\n")
 
-marks = int(input("Enter the marks: "))
+marks = int(input("Enter the marks: ")) // 10
 
-if (marks < 100 and marks >= 90):
-    print("\nCongratulations, Your got A Grade")
+a = lambda : 'A'
+b = lambda : 'B'
+c = lambda : 'C'
+d = lambda : 'D'
+e = lambda : 'E'
+f = lambda : 'F'
+default = lambda : "Unkown Value"
 
-elif (marks < 90 and marks >= 80):
-    print("\nCongratulations, Your got B Grade")
+grade = {
+    10: a(),
+    9: a(),
+    8: b(),
+    7: c(),
+    6: d(),
+    5: e(),
+    4: f(),
+    3: f(),
+    2: f(),
+    1: f(),
+    0: f()
+}
 
-elif (marks < 80 and marks >= 70):
-    print("\nCongratulations, Your got C Grade")
+def get_grade(m):
+    return grade.get(m, default)
 
-elif (marks < 70 and marks >= 60):
-    print("\nCongratulations, Your got D Grade")
-
-elif (marks < 60 and marks >= 50):
-    print("\nCongratulations, Your got E Grade")
-
-elif (marks < 50 and marks > 0):
-    print("\nBad Luck, Your got F Grade")
-
-else:
-    print("\nERROR, Unknown value")
+print('Your Grade is', get_grade(marks))

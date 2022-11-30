@@ -2,54 +2,79 @@
 
 #include <stdio.h>
 
-void push(int *arr, int element, int *top, int size) {
-    if (top == size) {
-        printf("Stack Overflow\n");
+void push(int *arr, int *top, int size) {
+    if (*top >= size-1) {
+        printf("\nStack Overflow\n");
     }
     else {
+        int element = 0;
+        printf("\nEnter the value of element: ");
+        scanf("%d", &element);
+
         *top = *top + 1;
         arr[*top] = element;
+
+        printf("\nPush Succesful\n");
     }
 }
 
-void pop(int arr[], int *top) {
+void pop(int *arr, int *top) {
         if (*top == -1) {
-        printf("Stack Underflow\n");
+        printf("\nStack Underflow\n");
     }
     else {
         *top = *top - 1;
+        
+        printf("\nPop Succesful\n");
     }
 }
 
-void show(int arr[], int top) {
-    printf("\n");
-    for (int i = 0; i <= top; i++) {
-        printf("%d ", arr[i]);
+void show(int *arr, int top) {
+    if(top == -1) {
+        printf("\nStack is Empty\n");
     }
-    printf("\n");
+    else {
+        printf("\n");
+        for (int i = 0; i <= top; i++) {
+            printf("%d ", arr[i]);
+        }
+        printf("\n");
+    }
 }
 
 int main() {
     int stack[100] = {0};
 
-    int top = -1;
-    int size = 5;
+    int top = -1, size = 0;
 
-    push(&stack[0], 10, &top, size);
+    printf("Enter the size of stack: ");
+    scanf("%d", &size);
 
-    show(stack, top);
+    while (1) {
+        int choice = 0;
+        printf("\n1. Push Element\n");
+        printf("2. Pop Element\n");
+        printf("3. Show Elements\n");
 
-    push(&stack[0], 20, &top, size);
+        printf("Choose your process: ");
+        scanf("%d", &choice);
 
-    push(&stack[0], 450, &top, size);
+        switch (choice){
+            case 1:
+                push(&stack[0], &top, size);
+                break;
 
-    show(stack, top);
+            case 2:
+                pop(&stack[0], &top);
+                break;
 
-    pop(&stack[0], &top);
+            case 3:
+                show(&stack[0], top);
+                break;
 
-    show(stack, top);
-
-    pop(&stack[0], &top);
-    
-    show(stack, top);
+            default:
+                printf("\nWrong choice :(\n");
+                break;
+        }
+    }
 }

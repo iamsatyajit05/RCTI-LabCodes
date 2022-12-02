@@ -2,17 +2,26 @@
 
 #include <stdio.h>
 
-int gcd(int a, int b){
-    if(a > b) {
-        return gcd(a-b, b);
-    }
+// int gcd(int a, int b){
+//     if(a > b) {
+//         return gcd(a-b, b);
+//     }
 
-    else if(a < b)  {
-        return gcd(a, b-a);
-    }
+//     else if(a < b)  {
+//         return gcd(a, b-a);
+//     }
     
-    else {
+//     else {
+//         return a;
+//     }
+// }
+
+int gcd(int a, int b) {
+    if (b == 0) {
         return a;
+    }
+    else {
+        return gcd(b, a % b);
     }
 }
 

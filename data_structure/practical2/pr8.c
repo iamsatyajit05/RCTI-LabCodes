@@ -1,4 +1,4 @@
-// Write a program to implement queue with insert operation
+// Write a program to implement queue with insert and delete operation
 
 #include <stdio.h>
 

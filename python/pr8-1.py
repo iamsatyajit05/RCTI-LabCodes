@@ -2,8 +2,16 @@
 
 import random
 
-print('Shuffling the List :)')
+def shuffle(list):
+    for x in range(random.randint(10, 20)):
+        pos1 = random.randint(0, len(myList)-1)
+        pos2 = random.randint(0, len(myList)-1)
 
+        temp = list[pos1]
+        list[pos1] = list[pos2]
+        list[pos2] = temp
+
+print('Shuffling the List :)')
 
 length = int(input('\nEnter the length of list: '))
 
@@ -13,15 +21,6 @@ for x  in range(length):
     myList[x] = input(f'Enter the {x+1} element: ')
 
 print(f'\nInitial List: {myList}')
-
-def shuffle(list):
-    for x in range(random.randint(10, 20)):
-        pos1 = random.randint(0, len(myList)-1)
-        pos2 = random.randint(0, len(myList)-1)
-
-        temp = list[pos1]
-        list[pos1] = list[pos2]
-        list[pos2] = temp
 
 shuffle(myList)
 

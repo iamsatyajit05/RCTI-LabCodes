@@ -2,10 +2,6 @@
 
 import math
 
-print('Prime or Not :)\n')
-
-num = int(input('Enter the number to check prime : '))
-
 # WITHOUT RECURSION
 def isPrime(n):
     prime = True
@@ -28,5 +24,9 @@ def isPrime(n):
 #     return True
 #   else:
 #     return isprime(n, divisor+1)
+
+print('Prime or Not :)\n')
+
+num = int(input('Enter the number to check prime : '))
 
 print(f'\nIs {num} a prime number? {isPrime(num)}')

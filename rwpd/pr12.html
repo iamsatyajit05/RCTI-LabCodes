@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Pr 12</title>
+</head>
+
+<body>
+    <h1 class="text-center my-4">Data Structure & Algorithm</h1>
+    <div class="mainBox container d-flex justify-content-center">
+        <div class="editor mx-3">
+            <nav class="mb-4">
+                <div class="nav nav-pills justify-content-between" id="pills-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#basicds"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Basic of DS</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#string"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">String</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="pill" data-bs-target="#stacknqueue"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Stack &
+                        Queue</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="pill" data-bs-target="#linkedlist"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Linked List
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="pill" data-bs-target="#tree"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Tree
+                    </button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tab Content">
+                <div id="basicds" class="tab-pane fade show active">
+                    Data structures are a fundamental concept in computer science, and they refer to the organization
+                    and storage of data in a computer's memory. Common examples of data structures include arrays,
+                    linked lists, stacks, queues, trees, and graphs. Each type of data structure has its own set of
+                    characteristics and is suited for different types of tasks.
+                    <br> <br>
+                    The need for data structures arises from the fact that data can take on many different forms and can
+                    be organized in many different ways. Different types of data structures are suited for different
+                    types of problems and can greatly improve the efficiency of algorithms.
+                    <br> <br>
+                    For example, a search algorithm that uses a hash table will be much faster than one that uses a
+                    linked list. Additionally, data structures also provide a way to represent and organize abstract
+                    concepts such as graphs or trees which can be used in various problems like network, travelling
+                    salesman problem etc. Learning data structures is essential for anyone interested in computer
+                    science, as it lays the foundation for understanding more advanced concepts such as algorithms and
+                    databases.
+                </div>
+                <div id="string" class="tab-pane fade">
+                    A string is a sequence of characters that represent text. Strings are a fundamental data type in
+                    many programming languages, and they are used to store and manipulate text-based data. Basic
+                    operations like concatenation, substring extraction, comparison can be performed on strings.
+                    <br><br>
+                    The need for strings arises from the fact that text-based data is a fundamental part of many
+                    applications, such as text editors, word processors, and database systems. They are used to
+                    represent words, sentences, paragraphs, and entire documents. Strings are also commonly used to
+                    represent other types of text-based data, such as file paths, URLs, and regular expressions.
+                    <br><br>
+                    Additionally, strings are also used to store user input and provide output to the user in many
+                    applications. Learning to work with strings is an essential skill for anyone interested in computer
+                    science, as they are used in many different types of applications, including web development,
+                    software development, and data analysis.
+                </div>
+                <div id="stacknqueue" class="tab-pane fade">
+                    A stack and a queue are both types of data structures that store a collection of elements. They are
+                    both based on the concept of a linear data structure, which means that elements are stored in a
+                    linear order.
+                    <br><br>
+                    A stack is a data structure that follows the Last In First Out (LIFO) principle. This means that the
+                    last element added to the stack will be the first element removed. Basic operations such as push (to
+                    add an element to the stack), pop (to remove an element from the stack), peek (to look at the top
+                    element of the stack without removing it) can be performed on stack. Stacks are often used in
+                    programming languages to keep track of function calls, and in the implementation of undo and redo
+                    functions in text editors.
+                    <br><br>
+                    A queue is a data structure that follows the First In First Out (FIFO) principle. This means that
+                    the first element added to the queue will be the first element removed. Basic operations such as
+                    enqueue (to add an element to the end of the queue), dequeue (to remove an element from the front of
+                    the queue), peek (to look at the front element of the queue without removing it) can be performed on
+                    queue. Queues are often used in scheduling tasks and maintaining a waiting list, for example in
+                    printing jobs, CPU task scheduling, handling interrupts etc.
+                    <br><br>
+                    Both stack and queue are useful data structures that can be used to solve a wide range of problems.
+                    They can be implemented using an array, linked list and many more. These data structure concepts are
+                    essential for solving complex problems that include memory management, recursion, and other topics
+                    in computer science.
+                </div>
+                <div id="linkedlist" class="tab-pane fade">
+                    A linked list is a type of data structure that consists of a sequence of elements, called nodes,
+                    where each node contains an element and a reference to the next node in the list. This allows for
+                    efficient insertion and deletion of elements from anywhere in the list.
+                    <br><br>
+                    The basic operations that can be performed on a linked list include inserting an element at the
+                    beginning or end of the list, deleting an element, finding an element, and iterating through the
+                    list. Each node in a linked list contains two fields, one storing the element and the other storing
+                    the reference to the next node.
+                    <br><br>
+                    The need for linked lists arises when it is necessary to store and manipulate a large number of
+                    elements and when the size of the collection changes frequently. Linked lists are dynamic in nature,
+                    which means that it can grow or shrink in size during the execution of a program, making it
+                    different from arrays which have a fixed size. Linked lists also have better memory utilization than
+                    arrays when it comes to the insertion and deletion of elements in the middle of the list.
+                    <br><br>
+                    Another advantage of linked list is that it can be useful in situations where the size of the
+                    collection is not known in advance or when the size of the collection changes frequently. Linked
+                    lists also provide constant-time insertions and deletions at the head of the list, making them
+                    useful in many algorithms such as LRU Cache, Queue, Stack. Due to its efficient memory usage and
+                    flexibility, linked lists are used in many application such as memory management, file system,
+                    device driver, internet communication and many more.
+                </div>
+                <div id="tree" class="tab-pane fade">
+                    A tree is a hierarchical data structure that is composed of nodes, where each node can have zero or
+                    more child nodes. Each node in a tree stores an element or a value and can be considered as the root
+                    of a subtree that contains its child nodes. The node that has no parent is called the root of the
+                    tree.
+                    <br><br>
+                    The basic operations that can be performed on a tree include traversing the tree, searching for a
+                    specific element, inserting an element, and deleting an element. There are various types of tree
+                    data structures, such as binary trees, AVL trees, and B-trees. Each type of tree has its own
+                    characteristics and is suited for different types of tasks.
+                    <br><br>
+                    The need for trees arises when it is necessary to store and manipulate hierarchical data or when the
+                    data needs to be organized in a hierarchical manner. Tree data structure is used to represent
+                    hierarchical relationships between data, for example file systems, organization chart, decision
+                    making trees, etc. Trees can also be used for searching, sorting and traversing large amount of
+                    data. Searching, for instance, is much more efficient in a balanced binary search tree than in a
+                    simple linked list or array. Another example is in case of Huffman coding, where tree is used to
+                    represent the variable-length prefix codes that are used for lossless data compression.
+                    <br><br>
+                    Trees are also used to implement efficient algorithms in various areas such as computer science,
+                    operations research, and artificial intelligence. They are also commonly used in databases, computer
+                    networks, and graph algorithms.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

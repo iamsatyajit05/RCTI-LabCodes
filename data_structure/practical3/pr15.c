@@ -1,4 +1,4 @@
-// Write a program to insert a node at beginning of linked list.
+// Write a program to count node (at any given position) in linked list.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,6 +9,7 @@ struct node {
 };
 
 struct node *head = NULL;
+struct node *current = NULL;
 
 void insertAtHead(int num) {
     struct node *link = (struct node*) malloc (sizeof(struct node));
@@ -38,13 +39,33 @@ void showLL() {
     }
 }
 
+int lengthOfLL() {
+    if (head == NULL) {
+        return 0;
+    }
+
+    int length = 1;
+    current = head;
+    while (current->next != NULL) {
+        length++; 
+        current = current->next;
+    }
+
+    printf("\nLength of Linked List: %d\n", length);
+
+    return length;
+}
+
 int main() {
     insertAtHead(5);
     insertAtHead(51);
+    insertAtHead(78);
     insertAtHead(65);
     insertAtHead(16);
 
     showLL();
+
+    lengthOfLL();
     
     return 0;
 }

@@ -1,4 +1,4 @@
-// Write a program to insert a node at beginning of linked list.
+// Write a program to insert a node at end of linked list.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,16 +9,31 @@ struct node {
 };
 
 struct node *head = NULL;
+struct node *current = NULL;
 
-void insertAtHead(int num) {
+void insertAtTail(int num) {
     struct node *link = (struct node*) malloc (sizeof(struct node));
-
     link->data = num;
-    link->next = head;
 
-    head = link;
+    if (head == NULL) {
+        link->next = head;
 
-    printf("\nInsertion of %d at Head Successfull\n", num);
+        head = link;
+    }
+    
+    else {
+        link->next = NULL;
+
+        current = head;
+
+        while (current->next != NULL) {
+            current = current->next;
+        }
+
+        current->next = link;
+    }
+
+    printf("\nInsertion of %d at Tail Successfull\n", num);
 }
 
 void showLL() {
@@ -39,10 +54,10 @@ void showLL() {
 }
 
 int main() {
-    insertAtHead(5);
-    insertAtHead(51);
-    insertAtHead(65);
-    insertAtHead(16);
+    insertAtTail(2);
+    insertAtTail(4);
+    insertAtTail(24);
+    insertAtTail(16);
 
     showLL();
     

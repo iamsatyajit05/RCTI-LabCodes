@@ -21,4 +21,4 @@ print("\nList after removing 12.69:", myList)
 
 myDict = tuple(myList)
 
-print("\nUpdated tuple:", myDict)
+print("\nUpdated Dict:", myDict)

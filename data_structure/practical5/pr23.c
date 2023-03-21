@@ -2,8 +2,6 @@
 
 #include <stdio.h>
 
-int count = 1;
-
 void quicksort(int arr[],int left,int right, int size){
     int i, j, pivot, temp;
 

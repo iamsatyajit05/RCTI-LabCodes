@@ -69,7 +69,7 @@ void serach(int data) {
         if(current == NULL) {
             isFound = 0;
             break;
-        }
+        } 
     }   
 
     if(isFound) {

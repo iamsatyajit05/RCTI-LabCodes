@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="base" placeholder="Base">
+    <input type="number" id="power" placeholder="Power">
+    <button id="btn">FIND POWER</button>
+    <h1 id="result"></h1>
+
+    <script>
+        let base = document.getElementById("base");
+        let power = document.getElementById("power");
+        let btn = document.getElementById("btn");
+        let result = document.getElementById("result");
+
+        btn.addEventListener("click", () => {
+            result.innerHTML = Math.pow(base.value, power.value)
+        })
+
+    </script>
+</body>
+</html>

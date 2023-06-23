@@ -1,0 +1,11 @@
+Q1: How to create account on GitHub?
+
+Step 1: Go to github.com
+Step 2: Click on Sign Up Button
+Step 3: Verify your account through captcha
+
+Q2: How to create rapository on GitHub
+
+Step 1: Click on plus button, now click on New Repository
+Step 2: Now enter the name of your repository
+Step 3: Click on Create Repository, And Hurray first repository is created

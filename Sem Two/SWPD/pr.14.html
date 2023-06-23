@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="isVowel(input.value, result)" id="btn">CHECK VOWEL OR NOT</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function isVowel(char, result) {
+            let ans;
+            
+            // if(char == 'a' || char == 'A' || char == 'a' || char == 'A' || char == 'i' || char == 'I' || char == 'o' || char == 'O' || char == 'u' || char == 'U')
+            //     ans = "Vowel"
+
+            if(char == 'a' || char == 'A')
+                ans = "Vowel"
+
+            else if(char == 'e' || char == 'E')
+                ans = "Vowel"
+
+            else if(char == 'i' || char == 'I')
+                ans = "Vowel"
+
+            else if(char == 'o' || char == 'O')
+                ans = "Vowel"
+
+            else if(char == 'u' || char == 'U')
+                ans = "Vowel"
+
+            else
+                ans = "Consonant"
+
+            result.innerHTML = "It is " + ans
+        }
+    </script>
+</body>
+</html>

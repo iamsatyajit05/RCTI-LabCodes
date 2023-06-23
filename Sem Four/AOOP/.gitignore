@@ -1,0 +1,8 @@
+# Exclude .vscode directory
+.vscode/
+
+# Exclude .txt files
+*.txt
+
+# Exclude .class files
+*.class

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FINDING MAXIMUM NUMBER: 2, 5, 3</h1>
+
+    <script>
+        // ax^2 + bx + c = 0
+
+        let a = 2, b = 10, c = 35, R1 = 0, R2 = 0;
+
+        function findRootsOfQuardraticEqu() {
+            let d = (b * b) - (4 * a * c);
+
+            if (d  > 0) {
+                R1 = (-b + Math.sqrt(d)) / (2 * a);
+                R2 = (-b - Math.sqrt(d)) / (2 * a);
+            }
+            
+            else if (d == 0) {
+                R1 = R2 = -b / (2 * a);
+            }
+
+            else {
+                let realPart = -b / (2 * a);
+                let imagePart = Math.sqrt(-d) / (2 * a);
+
+                R1 = realPart + imagePart;
+                R2 = realPart - imagePart;
+            }
+
+            console.log("1st Root = ", R1);
+            console.log("2nd Root = ", R2);
+        }
+
+        findRootsOfQuardraticEqu()
+    </script>
+</body>
+
+</html>
